@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/data_structure_graph"
+    app:startDestination="@id/dataStructureList">
+
+    <fragment
+        android:id="@+id/dataStructureInfo"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.DataStructure.DataStructureInfo"
+        android:label="fragment_data_structure_info"
+        tools:layout="@layout/fragment_data_structure_info" >
+        <action
+            android:id="@+id/action_dataStructureInfo_to_DSArray"
+            app:destination="@id/DSArray" />
+        <action
+            android:id="@+id/action_dataStructureInfo_to_DSLinkList"
+            app:destination="@id/DSLinkList" />
+        <action
+            android:id="@+id/action_dataStructureInfo_to_DSStack"
+            app:destination="@id/DSStack" />
+        <action
+            android:id="@+id/action_dataStructureInfo_to_DSQueue"
+            app:destination="@id/DSQueue" />
+        <action
+            android:id="@+id/action_dataStructureInfo_to_DSTrees"
+            app:destination="@id/DSTrees" />
+        <action
+            android:id="@+id/action_dataStructureInfo_to_DSGraph"
+            app:destination="@id/DSGraph" />
+        <argument
+            android:name="ds_topic"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataStructureList"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.DataStructure.DataStructureList"
+        android:label="fragment_data_structure_list"
+        tools:layout="@layout/fragment_data_structure_list" >
+        <action
+            android:id="@+id/action_dataStructureList_to_dataStructureInfo"
+            app:destination="@id/dataStructureInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/DSArray"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.DataStructure.DSArray"
+        android:label="fragment_d_s_array"
+        tools:layout="@layout/fragment_d_s_array" />
+    <fragment
+        android:id="@+id/DSLinkList"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.DataStructure.DSLinkList"
+        android:label="fragment_d_s_link_list"
+        tools:layout="@layout/fragment_d_s_link_list" />
+    <fragment
+        android:id="@+id/DSStack"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.DataStructure.DSStack"
+        android:label="fragment_d_s_stack"
+        tools:layout="@layout/fragment_d_s_stack" />
+    <fragment
+        android:id="@+id/DSQueue"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.DataStructure.DSQueue"
+        android:label="fragment_d_s_queue"
+        tools:layout="@layout/fragment_d_s_queue" />
+    <fragment
+        android:id="@+id/DSTrees"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.DataStructure.DSTrees"
+        android:label="fragment_d_s_trees"
+        tools:layout="@layout/fragment_d_s_trees" />
+    <fragment
+        android:id="@+id/DSGraph"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.DataStructure.DSGraph"
+        android:label="fragment_d_s_graph"
+        tools:layout="@layout/fragment_d_s_graph" />
+</navigation>

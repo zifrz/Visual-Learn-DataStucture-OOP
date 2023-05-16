@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BasicSyntax.BasicSyntaxList">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tvDataTypes"
+                style="@style/DemoTextStyle"
+                android:text="Data Types"
+                />
+            <TextView
+                android:id="@+id/tvVariables"
+                style="@style/DemoTextStyle"
+                android:text="Variables"
+                />
+            <TextView
+                android:id="@+id/tvConditionals"
+                style="@style/DemoTextStyle"
+                android:text="Conditionals"
+                />
+            <TextView
+                android:id="@+id/tvLoops"
+                style="@style/DemoTextStyle"
+                android:text="Loops"
+                />
+            <TextView
+                android:id="@+id/tvFunction"
+                style="@style/DemoTextStyle"
+                android:text="Function"
+                />
+            <TextView
+                android:id="@+id/tvSwitch"
+                style="@style/DemoTextStyle"
+                android:text="Switch "
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

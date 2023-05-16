@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/oop_graph"
+    app:startDestination="@id/OOPList">
+
+    <fragment
+        android:id="@+id/OOPList"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.OOP.OOPList"
+        android:label="fragment_o_o_p_list"
+        tools:layout="@layout/fragment_o_o_p_list" >
+        <action
+            android:id="@+id/action_OOPList_to_OOPInfo"
+            app:destination="@id/OOPInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/classesObject"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.OOP.OOPClassesObject"
+        android:label="fragment_classes_object"
+        tools:layout="@layout/fragment_classes_object" />
+    <fragment
+        android:id="@+id/inheritance"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.OOP.OOPInheritance"
+        android:label="fragment_inheritance"
+        tools:layout="@layout/fragment_inheritance" />
+    <fragment
+        android:id="@+id/abstraction"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.OOP.OOPAbstraction"
+        android:label="fragment_abstraction"
+        tools:layout="@layout/fragment_abstraction" />
+    <fragment
+        android:id="@+id/polymorphism"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.OOP.OOPPolymorphism"
+        android:label="fragment_polymorphism"
+        tools:layout="@layout/fragment_polymorphism" />
+    <fragment
+        android:id="@+id/OOPInfo"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.OOP.OOPInfo"
+        android:label="fragment_o_o_p_info"
+        tools:layout="@layout/fragment_o_o_p_info" >
+        <action
+            android:id="@+id/action_OOPInfo_to_classesObject"
+            app:destination="@id/classesObject" />
+        <action
+            android:id="@+id/action_OOPInfo_to_inheritance"
+            app:destination="@id/inheritance" />
+        <action
+            android:id="@+id/action_OOPInfo_to_abstraction"
+            app:destination="@id/abstraction" />
+        <action
+            android:id="@+id/action_OOPInfo_to_polymorphism"
+            app:destination="@id/polymorphism" />
+        <action
+            android:id="@+id/action_OOPInfo_to_encapsulation"
+            app:destination="@id/encapsulation" />
+        <argument
+            android:name="oop_topic"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/encapsulation"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.OOP.OOPEncapsulation"
+        android:label="fragment_encapsulation"
+        tools:layout="@layout/fragment_encapsulation" />
+</navigation>

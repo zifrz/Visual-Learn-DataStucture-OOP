@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "543321835764",
+    "project_id": "visual-learn-ds-oop-visual",
+    "storage_bucket": "visual-learn-ds-oop-visual.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543321835764:android:51de0631fef112b70d36a1",
+        "android_client_info": {
+          "package_name": "com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "543321835764-4sbqa4ojq1mmb6gtkenstfghb5qkmqdn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP1maBEItATpytbgOgqJf4n-vIbDHEQ6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "543321835764-4sbqa4ojq1mmb6gtkenstfghb5qkmqdn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

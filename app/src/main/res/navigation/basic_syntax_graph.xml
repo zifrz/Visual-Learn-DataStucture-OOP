@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/basic_syntax_graph"
+    app:startDestination="@id/basic_syntax_list">
+
+    <fragment
+        android:id="@+id/basic_syntax_list"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.BasicSyntax.BasicSyntaxList"
+        android:label="fragment_basic_syntax_list"
+        tools:layout="@layout/fragment_basic_syntax_list">
+        <action
+            android:id="@+id/action_basic_syntax_list_to_basic_syntax_info"
+            app:destination="@id/basic_syntax_info" />
+    </fragment>
+    <fragment
+        android:id="@+id/basic_syntax_info"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.BasicSyntax.BasicSyntaxInfo"
+        android:label="fragment_basic_syntax_info"
+        tools:layout="@layout/fragment_basic_syntax_info">
+        <action
+            android:id="@+id/action_basic_syntax_info_to_BSDataType"
+            app:destination="@id/BSDataType" />
+        <action
+            android:id="@+id/action_basic_syntax_info_to_BSVariable"
+            app:destination="@id/BSVariable" />
+        <action
+            android:id="@+id/action_basic_syntax_info_to_BSConditionals"
+            app:destination="@id/BSConditionals" />
+        <action
+            android:id="@+id/action_basic_syntax_info_to_BSLoops"
+            app:destination="@id/BSLoops" />
+        <action
+            android:id="@+id/action_basic_syntax_info_to_BSFunctions"
+            app:destination="@id/BSFunctions" />
+        <action
+            android:id="@+id/action_basic_syntax_info_to_BSSwitch"
+            app:destination="@id/BSSwitch" />
+        <argument
+            android:name="concept"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/BSDataType"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.BasicSyntax.BSDataType"
+        android:label="fragment_b_s_data_type"
+        tools:layout="@layout/fragment_b_s_data_type" />
+    <fragment
+        android:id="@+id/BSVariable"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.BasicSyntax.BSVariable"
+        android:label="fragment_b_s_variable"
+        tools:layout="@layout/fragment_b_s_variable" />
+    <fragment
+        android:id="@+id/BSConditionals"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.BasicSyntax.BSConditionals"
+        android:label="fragment_b_s_conditionals"
+        tools:layout="@layout/fragment_b_s_conditionals" />
+    <fragment
+        android:id="@+id/BSLoops"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.BasicSyntax.BSLoops"
+        android:label="fragment_b_s_loops"
+        tools:layout="@layout/fragment_b_s_loops" />
+    <fragment
+        android:id="@+id/BSFunctions"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.BasicSyntax.BSFunctions"
+        android:label="fragment_b_s_functions"
+        tools:layout="@layout/fragment_b_s_functions" />
+    <fragment
+        android:id="@+id/BSSwitch"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.BasicSyntax.BSSwitch"
+        android:label="fragment_b_s_switch"
+        tools:layout="@layout/fragment_b_s_switch" />
+</navigation>
